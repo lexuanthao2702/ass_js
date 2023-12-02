@@ -1,0 +1,110 @@
+body {
+  width: 100;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.title-form {
+  color: #4d7e74;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.container {
+  margin-top: -2.5rem;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: baseline;
+  background: transparent;
+  z-index: -2;
+}
+
+.container1 {
+  position: absolute;
+  align-self: flex-start;
+  margin: 5.625rem auto 0 auto;
+  padding: 0.625rem;
+  width: 34rem;
+  border: 1px solid rgb(249, 219, 211);
+  border-radius: 0.625rem;
+  background: transparent;
+  z-index: 2;
+}
+
+.container1 h2 {
+  font-family: "SVN-Mercuria";
+  font-style: normal;
+  font-weight: 1400;
+  font-size: 1.75rem;
+  line-height: 130%;
+  letter-spacing: 0.005em;
+  background: rgb(255, 203, 69);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+}
+
+.form_control input {
+  border: 1px solid rgb(255, 203, 69);
+  border-radius: 0.813rem;
+  margin: 0.625rem 0.625rem;
+  padding: 0 1.25rem;
+  width: 85%;
+  height: 2.5rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+}
+
+.submit .button {
+  position: relative;
+  overflow: hidden;
+  width: 40%;
+  height: 50px;
+  border-radius: 6px;
+  font-weight: bold;
+  border: 2px solid #4d7e74;
+  background: #4d7e74;
+  -webkit-background-clip: text;
+  color: transparent;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16.0231px;
+  line-height: 46px;
+  letter-spacing: 0.005em;
+  margin-left: 14px;
+  margin-top: 10px;
+  z-index: 1;
+}
+
+span {
+  background: #4d7e74;
+  height: 100%;
+  width: 0;
+  border-radius: 6px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.submit .button:hover span {
+  width: 100%;
+}
+
+.submit .button:hover {
+  border: none;
+  color: #ffffff;
+}

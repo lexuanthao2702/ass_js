@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignment</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="stylesheet" href="./test.css" />
+        <script defer src="./test.js"></script>
+    </head>
+    <body>
+        <div id="root">
+            <header class="header">
+                <div class="wrapper-header">
+                    <div class="logo">
+                        <h1 class="logo-name">MShop</h1>
+                    </div>
+                    <nav class="navigate">
+                        <a href="" class="navigate-link">Home</a>
+                        <a href="" class="navigate-link">Laptop</a>
+                        <a href="" class="navigate-link">Keyboard</a>
+                    </nav>
+                    <div class="action">
+                        <div class="action-icon icon-cart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                <circle cx="10" cy="28" r="2" fill="currentColor" />
+                                <circle cx="24" cy="28" r="2" fill="currentColor" />
+                                <path
+                                    fill="currentColor"
+                                    d="M28 7H5.82L5 2.8A1 1 0 0 0 4 2H0v2h3.18L7 23.2a1 1 0 0 0 1 .8h18v-2H8.82L8 18h18a1 1 0 0 0 1-.78l2-9A1 1 0 0 0 28 7Zm-2.8 9H7.62l-1.4-7h20.53Z"
+                                />
+                            </svg>
+                            <span>0</span>
+                        </div>
+                        <div class="action-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                                <path
+                                    fill="currentColor"
+                                    d="M11 2c4.968 0 9 4.032 9 9s-4.032 9-9 9s-9-4.032-9-9s4.032-9 9-9zm0 16c3.867 0 7-3.133 7-7c0-3.868-3.133-7-7-7c-3.868 0-7 3.132-7 7c0 3.867 3.132 7 7 7zm8.485.071l2.829 2.828l-1.415 1.415l-2.828-2.829l1.414-1.414z"
+                                />
+                            </svg>
+                        </div>
+                        <div class="user">
+                            <button class="btn-user">Login</button>
+                            <div class="overlay">
+                                <div class="module-overlay"></div>
+                                <form action="" method="get" id="form-login">
+                                    <h2 class="name-form">Welcome</h2>
+                                    <input class="input-login" name="code-student" placeholder="Email" type="text" />
+                                    <input class="input-login" name="password" placeholder="mật khẩu" type="password" />
+                                    <input class="input-login" name="code" placeholder="mã xác thực" type="number" />
+                                    <button type="submit" class="submit-login">Login</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <div class="banner">
+                    <div class="slider">
+                        <svg
+                            class="icon-next icon-left"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="50"
+                            height="50"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                fill="currentColor"
+                                d="m12.3 15.3l-2.6-2.6q-.15-.15-.225-.325Q9.4 12.2 9.4 12t.075-.375q.075-.175.225-.325l2.6-2.6q.475-.475 1.087-.212q.613.262.613.937v5.15q0 .675-.613.937q-.612.263-1.087-.212Z"
+                            />
+                        </svg>
+                        <svg
+                            class="icon-next icon-right"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="50"
+                            height="50"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                fill="currentColor"
+                                d="M11.7 15.3q-.475.475-1.087.212Q10 15.25 10 14.575v-5.15q0-.675.613-.937q.612-.263 1.087.212l2.6 2.6q.15.15.225.325q.075.175.075.375t-.075.375q-.075.175-.225.325Z"
+                            />
+                        </svg>
+                        <div class="main-slider">
+                            <div class="item-slider">
+                                <img
+                                    src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                    alt=""
+                                    class="image-slider"
+                                />
+                            </div>
+                            <div class="item-slider">
+                                <img
+                                    src="https://images.unsplash.com/photo-1671726203382-8ea3393d7ad6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                    alt=""
+                                    class="image-slider"
+                                />
+                            </div>
+                            <div class="item-slider">
+                                <img
+                                    src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                    alt=""
+                                    class="image-slider"
+                                />
+                            </div>
+                            <div class="item-slider">
+                                <img
+                                    src="https://images.unsplash.com/photo-1481487196290-c152efe083f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1262&q=80"
+                                    alt=""
+                                    class="image-slider"
+                                />
+                            </div>
+                            <div class="item-slider">
+                                <img
+                                    src="https://images.unsplash.com/photo-1670272506152-6f2703532cd3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                    alt=""
+                                    class="image-slider"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sale-flash">
+                    <div class="wrapper-flash">
+                        <h2 class="heading-flash">Flash sale</h2>
+                        <div class="count-dow">
+                            <div class="icon-flash">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M7 2v11h3v9l7-12h-4l4-8z" />
+                                </svg>
+                            </div>
+                            <div class="time-sale">30 : 00</div>
+                        </div>
+                    </div>
+                    <div class="product-sale">
+                        <div class="item-product-sale item-product">
+                            <div class="icon-heart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        fill="currentColor"
+                                        d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53L12 21.35Z"
+                                    />
+                                </svg>
+                            </div>
+                            <img
+                                src="https://techtimesvn.com/wp-content/uploads/2023/02/Apple-MacBook-Pro-M2-Feature-Blue-Green.jpg"
+                                alt=""
+                                class="product-sale-img"
+                            />
+                            <p class="product-sale-name">
+                                Apple MacBook Pro review (13-inch, 2020): Easier to recommend
+                            </p>
+                            <div class="wrapper-btn" id="1">
+                                <button class="btn-action btn-action-buy">Buy</button>
+                                <button class="btn-action btn-action-addCart">Add Cart</button>
+                            </div>
+                        </div>
+                        <div class="item-product-sale item-product">
+                            <div class="icon-heart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        fill="currentColor"
+                                        d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53L12 21.35Z"
+                                    />
+                                </svg>
+                            </div>
+
+
+                            <img
+                                src="https://techtimesvn.com/wp-content/uploads/2023/02/Apple-MacBook-Pro-M2-Feature-Blue-Green.jpg"
+                                alt=""
+                                class="product-sale-img"
+                            />
+                            <p class="product-sale-name">
+                                Apple MacBook Pro review (13-inch, 2020): Easier to recommend
+                            </p>
+                            <div class="wrapper-btn" id="2">
+                                <button class="btn-action btn-action-buy">Buy</button>
+                                <button class="btn-action btn-action-addCart">Add Cart</button>
+                            </div>
+                        </div>
+                        <div class="item-product-sale item-product">
+                            <div class="icon-heart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        fill="currentColor"
+                                        d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53L12 21.35Z"
+                                    />
+                                </svg>
+                            </div>
+                            <img
+                                src="https://techtimesvn.com/wp-content/uploads/2023/02/Apple-MacBook-Pro-M2-Feature-Blue-Green.jpg"
+                                alt=""
+                                class="product-sale-img"
+                            />
+                            <p class="product-sale-name">
+                                Apple MacBook Pro review (13-inch, 2020): Easier to recommend
+                            </p>
+                            <div class="wrapper-btn" id="3">
+                                <button class="btn-action btn-action-buy">Buy</button>
+                                <button class="btn-action btn-action-addCart">Add Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper-product">
+                    <h2 class="heading-product">Sản phẩm</h2>
+                    <div class="product">
+                        <div class="item-product item-product-main">
+                            <div class="icon-heart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        fill="currentColor"
+                                        d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53L12 21.35Z"
+                                    />
+                                </svg>
+                            </div>
+                            <img
+                                src="https://macstores.vn/wp-content/uploads/2023/01/macbook-pro-m2-pro-space-gray-5.jpg"
+                                alt=" "
+                            />
+                            <h3 class="name-product-main">
+                                Max Option – MacBook Pro M2 Max 16 inch 2023 New – (M2 Max/96GB/8TB/Space Gray)
+                            </h3>
+                            <div class="wrapper-btn" id="4">
+                                <button class="btn-action btn-action-buy">Buy</button>
+                                <button class="btn-action btn-action-addCart">Add Cart</button>
+                            </div>
+                        </div>
+                        <div class="item-product item-product-main">
+                            <div class="icon-heart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        fill="currentColor"
+                                        d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53L12 21.35Z"
+                                    />
+                                </svg>
+                            </div>
+                            <img
+                                src="https://macstores.vn/wp-content/uploads/2023/01/macbook-pro-m2-pro-space-gray-5.jpg"
+                                alt=" "
+                            />
+                            <h3 class="name-product-main">
+                                Max Option – MacBook Pro M2 Max 16 inch 2023 New – (M2 Max/96GB/8TB/Space Gray)
+                            </h3>
+                            <div class="wrapper-btn" id="5">
+                                <button class="btn-action btn-action-buy">Buy</button>
+                                <button class="btn-action btn-action-addCart">Add Cart</button>
+                            </div>
+                        </div>
+                        <div class="item-product item-product-main">
+                            <div class="icon-heart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        fill="currentColor"
+                                        d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53L12 21.35Z"
+                                    />
+                                </svg>
+                            </div>
+                            <img
+                                src="https://macstores.vn/wp-content/uploads/2023/01/macbook-pro-m2-pro-space-gray-5.jpg"
+                                alt=" "
+                            />
+                            <h3 class="name-product-main">
+                                Max Option – MacBook Pro M2 Max 16 inch 2023 New – (M2 Max/96GB/8TB/Space Gray)
+                            </h3>
+                            <div class="wrapper-btn" id="6">
+                                <button class="btn-action btn-action-buy">Buy</button>
+                                <button class="btn-action btn-action-addCart">Add Cart</button>
+                            </div>
+                        </div>
+                        <div class="item-product item-product-main">
+                            <div class="icon-heart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        fill="currentColor"
+                                        d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53L12 21.35Z"
+                                    />
+                                </svg>
+                            </div>
+                            <img
+                                src="https://macstores.vn/wp-content/uploads/2023/01/macbook-pro-m2-pro-space-gray-5.jpg"
+                                alt=" "
+                            />
+                            <h3 class="name-product-main">
+                                Max Option – MacBook Pro M2 Max 16 inch 2023 New – (M2 Max/96GB/8TB/Space Gray)
+                            </h3>
+                            <div class="wrapper-btn" id="7">
+                                <button class="btn-action btn-action-buy">Buy</button>
+                                <button class="btn-action btn-action-addCart">Add Cart</button>
+                            </div>
+                        </div>
+                        <div class="item-product item-product-main">
+                            <div class="icon-heart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        fill="currentColor"
+                                        d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53L12 21.35Z"
+                                    />
+                                </svg>
+                            </div>
+                            <img
+                                src="https://macstores.vn/wp-content/uploads/2023/01/macbook-pro-m2-pro-space-gray-5.jpg"
+                                alt=" "
+                            />
+                            <h3 class="name-product-main">
+                                Max Option – MacBook Pro M2 Max 16 inch 2023 New – (M2 Max/96GB/8TB/Space Gray)
+                            </h3>
+                            <div class="wrapper-btn" id="8">
+                                <button class="btn-action btn-action-buy">Buy</button>
+                                <button class="btn-action btn-action-addCart">Add Cart</button>
+                            </div>
+                        </div>
+                        <div class="item-product item-product-main">
+                            <div class="icon-heart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        fill="currentColor"
+                                        d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53L12 21.35Z"
+                                    />
+                                </svg>
+                            </div>
+                            <img
+                                src="https://macstores.vn/wp-content/uploads/2023/01/macbook-pro-m2-pro-space-gray-5.jpg"
+                                alt=" "
+                            />
+                            <h3 class="name-product-main">
+                                Max Option – MacBook Pro M2 Max 16 inch 2023 New – (M2 Max/96GB/8TB/Space Gray)
+                            </h3>
+                            <div class="wrapper-btn" id="9">
+                                <button class="btn-action btn-action-buy">Buy</button>
+                                <button class="btn-action btn-action-addCart">Add Cart</button>
+                            </div>
+                        </div>
+                        <div class="item-product item-product-main">
+                            <div class="icon-heart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        fill="currentColor"
+                                        d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53L12 21.35Z"
+                                    />
+                                </svg>
+                            </div>
+                            <img
+                                src="https://macstores.vn/wp-content/uploads/2023/01/macbook-pro-m2-pro-space-gray-5.jpg"
+                                alt=" "
+                            />
+                            <h3 class="name-product-main">
+                                Max Option – MacBook Pro M2 Max 16 inch 2023 New – (M2 Max/96GB/8TB/Space Gray)
+                            </h3>
+                            <div class="wrapper-btn" id="10">
+                                <button class="btn-action btn-action-buy">Buy</button>
+                                <button class="btn-action btn-action-addCart">Add Cart</button>
+                            </div>
+                        </div>
+                        <div class="item-product item-product-main">
+                            <div class="icon-heart">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        fill="currentColor"
+                                        d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53L12 21.35Z"
+                                    />
+                                </svg>
+                            </div>
+                            <img
+                                src="https://macstores.vn/wp-content/uploads/2023/01/macbook-pro-m2-pro-space-gray-5.jpg"
+                                alt=" "
+                            />
+                            <h3 class="name-product-main">
+                                Max Option – MacBook Pro M2 Max 16 inch 2023 New – (M2 Max/96GB/8TB/Space Gray)
+                            </h3>
+                            <div class="wrapper-btn" id="11">
+                                <button class="btn-action btn-action-buy">Buy</button>
+                                <button class="btn-action btn-action-addCart">Add Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
